@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9"> <![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FAVICON -->
+    <!--local -->
+    <!-- <link rel="shortcut icon" type="images/png" href="images/favicon/favicon.png"> -->
+    <!--CDN GLOBAL -->
+    <link rel="shortcut icon" type="images/png" href="images/favicon/favicon.png">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+    <!-- JAVASCRIPT GLOBAL CDN -->
+    <script type='text/javascript'>
+        /*javascript global for using the CDN inside scripts */
+        var cdnURL = '';
+    </script>
+    <!--FONTAWASE ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS STYLESHEET -->
+    <!--local-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--CDN GLOBAL -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- JAVASCRIPT -->
+    <!--local -->
+    <!-- <script src="js/sticky-nav.js"></script> -->
+    <!-- <script src="js/transparent-nav.js"></script>  -->
+    <!-- CDN GLOBAL -->
+    <script src="js/sticky-nav.js"></script>
+    <!-- <script src="js/transparent-nav.js"></script>  -->
+
+    <!--jQuery -- -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- GOOGLE ANALYTICS - Global site tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171295395-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-171295395-1');
+    </script>
+
+
+
+</head>
+
+<body>
+
+
+    <header id="header">
+        <nav id="menu" class="navbar">
+            <!--LOGO-->
+            <div class="navbar-brand">
+                <div class="navbar-brand__logo">
+                    <a href="https://sukhi222.org/">
+                        <img src="images/logo/international/logo.png" alt="Logo" class="logo" title="SUKHI 222 Logo">
+                    </a>
+                </div>
+            </div>
+
+            <!--MOBILE MENU TOGGLE BUTTON-->
+            <div class="navbar-toggle">
+
+                <label for="tm" id="toggle-menu" class="mobile-menu-nav">
+                    <div class="menu-icon">
+                        <i class="fa fa-toggle-off"></i>
+                        <i class="fa fa-toggle-on"></i>
+                    </div>
+                </label>
+
+
+            </div>
+
+            <!--NAVIGATION MENU-->
+            <div class="navbar-menu">
+                <input type="checkbox" id="tm">
+                <!--HOME PAGE-->
+                <ul class="navbar-menu__list clearfix">
+                    <li>
+                        <a class="gold-underline" href="index.html">HOME</a>
+                    </li>
+                    <!--ABOUT PAGE-->
+                    <li>
+                        <a class="gold-underline" href="#">ABOUT<span class="drop-icon-span">▾</span>
+                            <label title="Toggle Drop-down" class="drop-icon" for="toggle-menu-about"></label></a>
+                        <input type="checkbox" id="toggle-menu-about">
+                        <ul class="sub-menu">
+                            <!--ABOUT-who we are-->
+                            <li>
+                                <a href="#">WHO WE ARE<span class="drop-icon-span">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon"
+                                        for="toggle-menu-who-we-are"></label></a>
+                                <input type="checkbox" id="toggle-menu-who-we-are">
+                                <ul class="sub-menu sub-sub-menu">
+                                    <li>
+                                        <a href="about-who-we-are-purpose-statement.html">Purpose Statement</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-who-we-are-sukhi222.html">SUKHI 222</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--ABOUT-what we do-->
+                            <!--
+                <li>
+                    <a href="#">WHAT WE DO<span class="drop-icon-span">▾</span>
+                        <label title="Toggle Drop-down" class="drop-icon" for="toggle-menu-what-we-do"></label></a>
+                    <input type="checkbox" id="toggle-menu-what-we-do">
+                    <ul class="sub-menu sub-sub-menu">
+                        <li>
+                            <a href="coming-soon.html">FAQ</a>
+                        </li>
+                    </ul>
+                </li>
+                -->
+                            <!--ABOUT-how we work-->
+                            <!--
+                <li>
+                    <a href="#">HOW WE WORK<span class="drop-icon-span">▾</span>
+                        <label title="Toggle Drop-down" class="drop-icon" for="toggle-menu-how-we-work"></label></a>
+                    <input type="checkbox" id="toggle-menu-how-we-work">
+                    <ul class="sub-menu sub-sub-menu">
+                        <li>
+                            <a href="coming-soon.html">Structure & Functions </a>
+                        </li>
+                    </ul>
+                </li>
+                -->
+                            <!--ABOUT-why we do it-->
+                            <!--
+                <li>
+                    <a href="#">WHY WE DO IT
+                        <span class="drop-icon-span">▾</span>
+                        <label title="Toggle Drop-down" class="drop-icon" for="toggle-menu-why-we-do-it"></label>
+                    </a>
+                    <input type="checkbox" id="toggle-menu-why-we-do-it">
+                    <ul class="sub-menu sub-sub-menu">
+                        <li>
+                            <a href="coming-soon.html">coming-soon</a>
+                        </li>
+                    </ul>
+                </li>
+                -->
+                            <!--ABOUT-where we work-->
+                            <li>
+                                <a href="#">WHERE WE WORK<span class="drop-icon-span">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon"
+                                        for="toggle-menu-where-we-work"></label></a>
+                                <input type="checkbox" id="toggle-menu-where-we-work">
+                                <!--ABOUT - where we work sub-menu-->
+                                <ul class="sub-menu sub-sub-menu">
+                                    <li>
+                                        <a href="about-where-we-work-headquarters.html">Headquarters </a>
+                                    </li>
+                                    <li>
+                                        <a href="about-where-we-work-australia.html">Australia </a>
+                                    </li>
+                                    <li>
+                                        <a href="about-where-we-work-cameroon.html">Cameroon </a>
+                                    </li>
+                                    <li>
+                                        <a href="about-where-we-work-ghana.html">Ghana </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--ABOUT-projects-->
+                            <li>
+                                <a href="#">PROJECTS<span class="drop-icon-span">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon"
+                                        for="toggle-menu-projects"></label>
+                                </a>
+                                <input type="checkbox" id="toggle-menu-projects">
+                                <ul class="sub-menu sub-sub-menu ">
+                                    <!--
+                        <li>
+                            <a href="coming-soon.html">Food</a>
+                        </li>
+                        -->
+                                    <li>
+                                        <a href="about-projects-water.html">Water </a>
+                                    </li>
+                                    <!--
+                        <li>
+                            <a href="coming-soon.html">Shelter </a>
+                        </li>
+                        -->
+                                    <!--
+                        <li>
+                            <a href="coming-soon.html">Education</a>
+                        </li>
+                        -->
+                                    <!--
+                        <li>
+                            <a href="coming-soon.html">Health & Well-Being</a>
+                        </li>
+                        -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--GET INVOLVED PAGE-->
+                    <li>
+                        <a class="gold-underline" href="#">GET INVOLVED
+                            <span class="drop-icon-span">▾</span>
+                            <label title="Toggle Drop-down" class="drop-icon"
+                                for="toggle-menu-get-involved"></label></a>
+                        <input type="checkbox" id="toggle-menu-get-involved">
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="get-involved-volunteers.html">VOLUNTEERS</a>
+                            </li>
+                            <!--
+                <li>
+                    <a href="coming-soon.html">AMBASSADORS</a>
+                </li>
+                -->
+                            <!--
+                <li>
+                    <a href="coming-soon.html">INTERNS</a>
+                </li>
+                -->
+                            <li>
+                                <a href="get-involved-collaborators.html">COLLABORATORS</a>
+                            </li>
+                            <!--
+                <li>
+                    <a href="coming-soon.html">JOBS <span class="span-jobs">0 Available</span></a>
+                </li>
+                -->
+                        </ul>
+                    </li>
+                    <!--FEED PAGE-->
+                    <li>
+                        <a class="gold-underline" href="#">FEED<span class="drop-icon-span">▾</span>
+                            <label title="Toggle Drop-down" class="drop-icon" for="toggle-menu-feed"></label></a>
+                        <input type="checkbox" id="toggle-menu-feed">
+                        <!--FEED sub-menu-->
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="feed-news.html">NEWS</a>
+                            </li>
+                            <!--
+                <li>
+                    <a href="coming-soon.html">EVENTS</a>
+                </li>
+                -->
+                            <!--
+                <li>
+                    <a href="coming-soon.html">BLOG</a>
+                </li>
+                -->
+                        </ul>
+                    </li>
+                    <!--GALLERY PAGE-->
+                    <li>
+                        <a class="gold-underline" href="#">GALLERY<span class="drop-icon-span">▾</span>
+                            <label title="Toggle Drop-down" class="drop-icon" for="toggle-menu-gallery"></label>
+                        </a>
+                        <input type="checkbox" id="toggle-menu-gallery">
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="gallery-art.html">ART</a>
+                            </li>
+                            <!--
+                <li><a href="coming-soon.html">EVENTS</a></li>
+                -->
+                            <li>
+                                <a href="gallery-projects.html">PROJECTS</a>
+                            </li>
+                            <li>
+                                <a href="gallery-video.html">VIDEO</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--CONTACT PAGE-->
+                    <li>
+                        <a class="gold-underline" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+        </nav>
+    </header>
+
+    <main id="feed-news">
+        <div class="container">
+            <!--sections spread of SUKHI222-->
+            <article>
+                <div class="row">
+                    <div class="col-12">
+                        <article>
+                            <div class="article-content">
+                                <div class="article-content__header">
+                                    <h1>THE JOURNEY OF SUKHI 222 IN REACHING THE WORLD FOR CLEAN AND SAFE WATER</h1>
+                                    <div class="gold-border"></div>
+                                </div>
+                                <div class="article-content__image">
+                                    <img class="article__item--image"
+                                        src="images/feeds/news/the-journey-of-sukhi222-in-reaching-the-world-for-clean-and-safe-water/providing-water-filters.jpg"
+                                        alt="Distributing 22 water filters in Kikwawila village in Ifakara, Morogoro region, Tanzania -- SUKHI222">
+
+                                    <div class="article-content__image--details">
+                                        <span><b>Date:</b> 14th of July 2021</span>
+                                        <span><b>Author:</b> Mohammed Hammie</span>
+                                        <span><b>Location:</b> Tanzania</span>
+                                    </div>
+                                </div>
+                                <div class="article-content__info">
+                                    <p>Sukhi 222 International has continued to reach out to various citizens around the
+                                        world by providing water filters.</p>
+                                    <p>The organization recently distributed 22 water filters in Kikwawila village in
+                                        Ifakara, Morogoro region, Tanzania where approximately 8981 citizens benefit
+                                        including 1,386 primary and secondary school students. </p>
+                                    <p>The distribution of the water filters went hand in hand with the training on how
+                                        to use it, where the trainer who is also a Journalist Mr. Mohammed Hammie and
+                                        wash advocate Mr. Burhani Mustafa conducted the training. </p>
+                                </div>
+
+                                <div class="article-content__image">
+                                    <img class="article__item--image"
+                                        src="images/feeds/news/the-journey-of-sukhi222-in-reaching-the-world-for-clean-and-safe-water/educating-the-village-on-how-to-set-up-the-filter.jpg"
+                                        alt="SUKHI 222 staff educating the village on how to set up the filter">
+                                </div>
+
+                                <div class="article-content__info">
+                                    <p>The training was attended by the villagers as well as the village leaders
+                                        including a ward councilor Mr. Goodluck Msowoya, Village Executive Ms. Sofia
+                                        Msaku, Village Chairman Mr. Shabani Salahange along with the chairman of
+                                        Kikwawila sub-dvillage Mr. Hamadi Kondo. </p>
+                                    <p>Other members who attended the training were Donatta Mushi, Hadija Limaga, Omary
+                                        Kingumbi, Saidina Faya, Issa Mkwesi and Elizabeth Kalinga. </p>
+                                    <p>The ward councilor Mr. Msowoya said that the water filters will be a catalyst for
+                                        eradicating cholera in the village which has been plaguing them for a long time.
+                                    </p>
+                                    <p> “Our village is suffering from cholera, it is my belief that these water filters
+                                        will be a great help to the people and students in eradicating cholera,” said
+                                        Mr. Msowoya. </p>
+                                    <p>Also Kikwawila village executive Ms. Sofia Msaku said that the water filters not
+                                        only help to eradicate various water-borne diseases, but also assure the people
+                                        of life through water as they have always heard that water is life without
+                                        access to safe water. </p>
+                                </div>
+
+                                <div class="article-content__image">
+                                    <img class="article__item--image"
+                                        src="images/feeds/news/the-journey-of-sukhi222-in-reaching-the-world-for-clean-and-safe-water/educating-the-village-on-how-to-set-up-the-filter-2.jpg"
+                                        alt="Another photo of SUKHI 222 staff educating the village on how to set up the filter">
+                                </div>
+
+                                <div class="article-content__info">
+                                    <p> “We have only heard that water is life, but that statement was not realistic
+                                        about our lives as we used to drink water thinking it was clean but not safe,
+                                        now we are sure to say water is life because these filters give us clean and
+                                        safe water,” said Ms. Sofia. </p>
+                                    <p>One day after the training, members and village leaders began distributing the
+                                        water filters to primary and secondary schools in the area, providing education
+                                        on the use of the equipment to students and their teachers. </p>
+                                    <p>The water filters has also been distributed to neighboring villages in Kibaoni
+                                        ward including Kilima and Lungongole village. </p>
+                                </div>
+                                <div class="article-content__image">
+                                    <img class="article__item--image"
+                                        src="images/feeds/news/the-journey-of-sukhi222-in-reaching-the-world-for-clean-and-safe-water/sukhi222-water-project-location-map.jpg"
+                                        alt="Image of SUKHI222 water project locatios"
+                                        title="SUKHI222 water project location map">
+                                </div>
+
+                                <div class="article-content__info">
+                                    <p>The journey of Sukhi 222 is still ongoing to reach all citizens in need of clean
+                                        and safe water in the world where so far the water filters have reached Ghana,
+                                        Cameroon, Nepal, Kenya and Tanzania. </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!--col-ends-->
+                </div>
+            </article>
+
+            <!--SECTION get involved-->
+            <section id="btn-get-involved">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-content">
+                            <div class="section-content__nav-buttons get-involved-button ">
+                                <div class="button-item">
+                                    <a class="btn btn-big " href="contact.html">
+                                        <span class="btn-span"></span>
+                                        <span class="btn-span"></span>
+                                        <span class="btn-span"></span>
+                                        <span class="btn-span"></span>GET INVOLVED</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--col-ends-->
+                </div>
+            </section>
+            <!--SECTION social media share buttons -->
+            <section>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-content">
+                            <div class="section-content__header">
+                                <h5> If you enjoyed reading this article, please share it with the world and your
+                                    friends, you can do that by clicking on one of the icon below.
+                                </h5>
+                            </div>
+
+                            <div class="section-content__nav-buttons share-buttons">
+                                <!-- LinkedIn -->
+                                <div class="share-buttons__button">
+                                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://sukhi222.org/news-the-journey-of-sukhi222-in-reaching-the-world-for-clean-and-safe-water"
+                                        target="_blank">
+                                        <img src="images/social-media-icons/linkedin.png"
+                                            alt="LinkedIn article share button" title="Share it on LinkedIn " />
+                                    </a>
+                                </div>
+                                <!-- Facebook -->
+                                <div class="share-buttons__button">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://sukhi222.org/news-the-journey-of-sukhi222-in-reaching-the-world-for-clean-and-safe-water"
+                                        target="_blank">
+                                        <img src="images/social-media-icons/facebook.png"
+                                            alt="Facebook article share button" title="Share it on Facebook" />
+                                    </a>
+                                </div>
+                                <!-- Email -->
+                                <div class="share-buttons__button">
+                                    <a
+                                        href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://sukhi222.org/news-the-journey-of-sukhi222-in-reaching-the-world-for-clean-and-safe-water%0A">
+                                        <img src="images/social-media-icons/email.png" alt="Email article share button"
+                                            title="Email this article" />
+                                    </a>
+                                </div>
+                                <!-- Twitter -->
+                                <div class="share-buttons__button">
+                                    <a href="https://twitter.com/intent/tweet?url=https://sukhi222.org/news-the-journey-of-sukhi222-in-reaching-the-world-for-clean-and-safe-water&text= "
+                                        target="_blank">
+                                        <img src="images/social-media-icons/twitter.png"
+                                            alt="Twitter article share button" title="Share it on Twitter " />
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--col-ends-->
+                </div>
+            </section>
+
+
+
+        </div>
+        <!--container-ends-->
+    </main>
+
+
+
+    <!---->
+    <div class="sign-up-newsletter">
+
+
+        <!--SECTION newsletter-->
+        <section id="newsletter">
+            <div class="row">
+                <div class="col-12-tab">
+                    <div class="section-content">
+                        <div class="section-content__info">
+
+                            <form class="newsletter-form" action="../mail/subscribe.php" method="post">
+                                <label for="email"><b>SIGN UP TO RECEIVE UPDATES FROM THE SUKHI <span
+                                            class="sukhi222-blue-span">2</span><span
+                                            class="sukhi222-green-span">2</span><span
+                                            class="sukhi222-red-span">2</span></b></label>
+                                <div>
+                                    <input type="email" placeholder="Enter Your Email Address" name="email" required>
+                                    <button type="submit" name="submit">Sign Up</button>
+                                </div>
+                                <p>By clicking Sign Up, you agree to the SUKHI 222 Privacy and Cookie Notice. </p>
+                                <p><a href="terms-privacy.html">Terms & Privacy</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--col-ends-->
+            </div>
+        </section>
+
+
+
+
+    </div>
+    <footer class="footer">
+        <section class="footer-section order">
+            <div class="footer-section__content">
+                <img src="images/logo/international/logo.png" alt="logo" title="SUKHI 222 logo">
+            </div>
+        </section>
+        <section class="footer-section">
+            <div class="footer-section__header">
+                <h2>GET INVOLVED</h2>
+                <div class="gold-border"></div>
+            </div>
+            <div class="footer-section__content">
+                <ul class="hover-font-blue">
+                    <li><a href="get-involved-volunteers.html">VOLUNTEER</a></li>
+                    <li><a href="get-involved-collaborators.html">COLLABORATE&nbsp; &nbsp;&nbsp;</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="contact.html">DONATE</a></li>
+                    <li><a href="https://www.clubhouse.com/club/sukhi-222" target="_blank">CLUBHOUSE</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-section">
+            <div class="footer-section__header">
+                <h2>SITE LINKS</h2>
+                <div class="gold-border"></div>
+            </div>
+            <div class="footer-section__content">
+                <ul class="hover-font-green">
+                    <li><a href="about-who-we-are-sukhi222.html">SUKHI 222</a></li>
+                    <li><a href="about-where-we-work-index.html">WHERE WE WORK</a></li>
+                    <li><a href="about-projects-index.html">PROJECTS</a></li>
+                    <li><a href="feed-news.html">NEWS</a></li>
+                    <li><a tabindex="20" href="sitemap.html">SITEMAP</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-section">
+            <div class="footer-section__header">
+                <h2>FOLLOW US</h2>
+                <div class="gold-border"></div>
+            </div>
+            <div class="footer-section__content">
+                <div style="max-width: 100%; width: 100%;" class="row ">
+                    <a href="https://www.facebook.com/sukhi222international/" target="_blank" class="fa fa-facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/groups/12177249/" target="_blank" class="fa fa-linkedin"></a>
+                </div>
+                <div style=" max-width: 100%; width: 100%;" class="row">
+                    <a href="https://www.youtube.com/channel/UCwaJXLVmQIYht79y8vrfGVA?view_as=subscriber"
+                        target="_blank" class="fa fa-youtube"></a>
+                    <a href="#" target="_blank" class="fa fa-twitter"></a>
+                </div>
+                <div style=" max-width: 100%; width: 100%;" class="row">
+                    <a href="https://www.clubhouse.com/club/sukhi-222" target="_blank"><span style="font-size: 12px;"
+                            class="fa fa-clubhouse">Clubhouse</span></a>
+                    <a href="#" target="_blank" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </footer>
+    <div class="copy-rights">
+        Copyright &copy; 2018 /
+        <script>document.write(new Date().getFullYear())</script> SUKHI <span>2</span><span>2</span><span>2</span> Inc.
+        <span>All Rights Reserved</span>
+    </div>
+
+    <!-- Java script -->
+    <!--CDN-->
+    <script src="js/accordion.js"></script>
+    <script src="js/top-nav.js"></script>
+    <script src="js/body-scrolling-disabled-mobile-menu.js"></script>
+    <!-- <script src="js/logo-carousel.js"></script>-->
+    <!--LOCAL-->
+    <!--<script src="js/body-scrolling-disabled-mobile-menu.js"></script> -->
+    <!-- <script src="js/accordion.js"></script>
+<script src="js/top-nav.js"></script> -->
+
+
+
+
+
+</body>
+
+</html>

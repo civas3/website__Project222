@@ -1,0 +1,31 @@
+//TERMS-PRIVACY
+#terms-privacy {
+  margin-top: 15rem;
+  section{
+    margin: 0;
+    margin-top: 5rem;
+  }
+  .section-content{
+    &__header{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      h2{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+      }
+    
+    }
+    &__info{
+      max-width: 70ch;
+      p{
+        margin: 0;
+      }
+      ul{
+        list-style: none;
+      }
+    }
+  }
+
+}

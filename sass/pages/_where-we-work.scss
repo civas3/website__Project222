@@ -1,0 +1,71 @@
+//WHERE-WE-WORK
+#where-we-work{
+  //where-we-work row
+  .row{
+    flex-direction: column-reverse;
+    
+    @include respond(s-desktop) {
+       flex-direction: row-reverse;
+    @include section-bottom-shadow;
+    }
+  }
+
+  //where-we-work section contetnt
+  .section-content {  
+      //where-we-work section header
+      &__header {
+       width: 100%;
+       text-align: center;
+       @include respond(s-desktop) {
+        margin-top: 0;
+        text-align: left;
+        
+      }
+        h2{
+          padding-bottom: 0;
+          @include respond(s-desktop) {
+          text-align: left;
+        }
+        }
+
+        .position-title{
+          color: $color-primary-red;
+        }
+      }
+      //where-we-work section info
+      &__info {
+    
+      }
+     //where-we-work section image
+      &__image {  
+        @include respond(tab-land) {
+          display: flex;
+        }
+        img{
+          @include image-shadows;        
+        }
+      }
+      //where-we-work section inav buttons
+      &__nav-buttons-header{
+        font-weight: bold;
+        font-size: 2rem;
+        @include respond(tab-land) {
+          padding-right: 2rem;
+        }
+      }
+      &__nav-connect-buttons {
+         align-items: center;
+        @include respond(tab-land) {
+          flex-direction: column;
+          align-items: flex-end;
+          width: 90%;
+        }
+
+      }
+  }
+
+} 
+
+
+
+

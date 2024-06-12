@@ -1,0 +1,44 @@
+//GALLERY
+.gallery {
+  //gallery section
+  .section-content {
+    //section-content header
+    &__header{
+      max-width: 70rem;
+      text-align: center;
+    } 
+    //section-content image 
+    &__image {
+      max-width: 30rem;
+      @include respond(tab-port) {
+        max-width: 50rem;
+      }
+
+      img, iframe {
+        display: flex;
+        @include image-shadows;
+      }
+      iframe{
+        width: 30rem;
+        height: 20rem;
+        @include respond(tab-port) {
+          width: 50rem;
+          height: 34.8rem;
+        }
+
+      }
+     @include image-shadows;
+    }
+    //gallery section nav buttons
+    &__nav-buttons {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .fa-contact-links{
+        justify-content: center;
+      }
+    }
+  }
+}
+
+

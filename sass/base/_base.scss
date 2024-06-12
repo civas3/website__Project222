@@ -1,0 +1,68 @@
+    *,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   // list-style-type: none;
+}
+
+html {
+    //*62.5% is equal to 10px = 1rem 
+    font-size: 62.5%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $primary-color-gray-font;
+    font-family: "Poppins", sans-serif;
+    body {
+        font-size: 1.8rem;
+    }
+  }
+
+
+
+
+//HEADER IMAGE FRAME OVERLAY
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #00000063;
+    opacity: 0.9;
+}
+
+//HEADER IMAGE H1 BOX
+.intro {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 90vw;
+}
+
+//GOLD BORDER
+.gold-border {
+    color: $color-primary-gold;
+    border-top-style: solid;
+    border-top-width: 0.2rem !important;
+    width: 10rem;
+    margin: -1.5rem auto 1.5rem auto;
+    padding-bottom: 0.8rem;
+    @include respond(tab-land) {
+        margin: 1rem auto 3rem auto;
+    }
+}
+
+//CLIP-TEXT
+.clip-text {
+    font-size: 10rem;
+    background: url(https://media.giphy.com/media/JXHhI4o9NCf8k/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+

@@ -1,0 +1,162 @@
+/*“Web typography” refers to the appearance of all the text on your website. It includes basic 
+CSS text properties like what font to use and whether it should be italic or not, but typography 
+is much more than that. It’s about the space between and around letters, words, and lines. It’s 
+the size of different runs of text in relation to one another, and the history behind each font family.
+
+https://www.internetingishard.com/html-and-css/web-typography/
+*/
+
+/* !!!!___ Use % rather than px for all layout-related lenghts (including pictures) ___!!!! */
+
+//BLUE COLOR = INFORMAL
+//RED COLOR = IMPORTANT
+//GREEN COLOR = ACTION
+
+//GLOBAL
+h1 {
+  color: $color-primary-white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  text-align: center;
+ 
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color-darker-gray-header;
+  padding-bottom: 3rem;
+}
+
+p {
+  line-height: 2.5rem;
+  letter-spacing: 0.02rem;
+  &:not(:first-child) {
+    margin-top: 1.75rem;
+  }
+}
+
+li {
+  max-width: 64ch;
+  letter-spacing: 0.02rem;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color-gray-font;
+  letter-spacing: 0.02rem;
+}
+
+
+//all H1 in header-image section 
+.intro {
+  h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+    text-shadow: black 0.3rem 0.3rem;
+    background-color: $color-primary-black-transparent;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+    letter-spacing: 0.3rem;
+    display: table; //background color width of the text
+    text-align: center;
+    margin: auto;
+    @include respond(tab-land) {
+      line-height: 5rem;
+    }
+    @include respond(b-phone) {
+      font-size: 4.5rem;
+      line-height: 5rem;
+    }
+    @include respond(m-phone) {
+      font-size: 4rem;
+    }
+    @include respond(s-phone) {
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+
+
+//HERO-SLIDESHOW
+.hero-slideshow {
+  color: $color-primary-white;
+  //HERO SLIDESHOW - content info
+  &-content__info {
+    text-align: center;
+    letter-spacing: 0.04rem;
+    //   text-transform: none;
+
+    p {
+      font-size: 2rem;
+      @include respond(tab-port) {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+      }
+      @include respond(tab-land) {
+        font-size: 3.1rem;
+        line-height: 3.7rem;
+      }
+    }
+  }
+  //HERO SLIDESHOW - <H1> header slide
+  &-content__info-h1 {
+    h1 {
+      text-shadow: $color-primary-black-background 0.2rem 0.2rem;
+      font-size: 3rem;
+      @include respond(tab-port) {
+        font-size: 4.8rem;
+      }
+      @include respond(tab-land) {
+        font-size: 5.3rem;
+      }
+    }
+    span {
+      @include respond(tab-port) {
+        line-height: 140%;
+      }
+    }
+  }
+
+  //action-button
+  .index-hero-button {
+    a {
+      font-size: 2rem;
+      -webkit-box-shadow: 0px 3px 8px -1px rgba(122, 122, 122, 1);
+      -moz-box-shadow: 0px 3px 8px -1px rgba(122, 122, 122, 1);
+      box-shadow: 0px 3px 8px -1px rgba(122, 122, 122, 1);
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
+      @include respond(tab-land) {
+        font-size: 3.5rem;
+      }
+      @include respond(s-desktop) {
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+        background-color: $color-primary-light-blue-transparent;
+      }
+    }
+  }
+}
+
+
+//CONTACT-US
+#contact-us{
+  .btn-send-message{
+    text-transform: uppercase;
+  }
+}

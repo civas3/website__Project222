@@ -1,0 +1,1 @@
+Copyright &copy; 2018 / <script>document.write(new Date().getFullYear())</script> SUKHI <span>2</span><span>2</span><span>2</span> Inc. <span>All Rights Reserved</span>

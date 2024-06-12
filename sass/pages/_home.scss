@@ -1,0 +1,73 @@
+//HOME PAGE
+#home-page {
+    //home page row
+  .row {
+    flex-direction: column-reverse;
+    @include respond(s-desktop) {
+      flex-direction: row; 
+     
+    }
+   
+    
+  }
+//home section
+  section {
+    &:not(:first-child) {
+      margin: 10rem 0;
+      @include respond(tab-port) {
+        margin: 22.5rem 0;
+      }
+    }
+    &:nth-child(even) .row {
+      @include respond(s-desktop) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+//home page section content
+  .section-content {
+    justify-content: center;
+    //home page section content header
+    &__header {
+    
+    }
+    //home page section content info
+    &__info {
+       
+      }
+ 
+   
+    //home page section content nav buttons
+    &__nav-index-buttons {
+      .button-item{
+          width: 100%;
+          .btn{
+            width: 24rem;
+            @include respond(tab-land) {
+              min-width: 12rem;
+              width: auto;
+            }  
+          }
+          h6{
+            padding-bottom: 1.5rem;
+          }
+      }
+    }
+
+    //home page section image
+    &__image{
+      display: flex;
+      justify-content: center;
+      @include respond(s-desktop) {
+        justify-content: flex-start;
+      }
+
+      img{
+          width: 80%;
+          height: 100% !important;
+          //border: solid 0.3rem white;
+          @include image-shadows;
+      }
+    }
+  }
+}
